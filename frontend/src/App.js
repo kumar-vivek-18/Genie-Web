@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Home from './components/home/Home';
@@ -17,6 +17,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        <Route path="/" element={<Navigate to="/genie" replace />} />
         <Route exact path='/genie' element={<Home />} />
         <Route exact path='/genie/earn' element={<Earn />} />
         <Route exact path='/genie/contact' element={<Contacts />} />
