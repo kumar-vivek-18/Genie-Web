@@ -61,7 +61,7 @@ const TermsAndConditons = () => {
                     setCustomerCard(false);
                   }}
                 >
-                
+
                   <img
                     src={DropUp}
                     alt="contact"
@@ -83,8 +83,8 @@ const TermsAndConditons = () => {
                       />
                     </span>
                     5 spades are free for first-time users! After that, each
-                    spade will cost you 5 Rs. These are temporary charges,
-                    CulturTap will increase the charges shortly. 
+                    spades will cost you 5 Rs. These are temporary charges,
+                    CulturTap will increase the charges shortly.
                   </li>
                   <li className="flex text-[14px]  poppins-regular text-[#001B33]">
                     <span>
@@ -106,7 +106,7 @@ const TermsAndConditons = () => {
                       />
                     </span>
                     If you encounter any issues, please report your concerns to
-                    us. 
+                    us.
                   </li>
                   <li className="flex text-[14px]   poppins-regular text-[#001B33]">
                     <span>
@@ -120,20 +120,20 @@ const TermsAndConditons = () => {
                     choose specific vendors based on your delivery requirements.
                   </li>
                 </ul>
-               
-                <div  className="md:hidden flex justify-center items-center mt-[20px]">
-                <button
-                  className="cursor-pointer"
-                  onClick={() => {
-                    setCustomerCard(false);
-                  }}
-                >
-                  <img
-                    src={DropUp}
-                    alt="contact"
-                  
-                  />
-                </button>
+
+                <div className="md:hidden flex justify-center items-center mt-[20px]">
+                  <button
+                    className="cursor-pointer"
+                    onClick={() => {
+                      setCustomerCard(false);
+                    }}
+                  >
+                    <img
+                      src={DropUp}
+                      alt="contact"
+
+                    />
+                  </button>
                 </div>
               </div>
             </div>
@@ -260,21 +260,21 @@ const TermsAndConditons = () => {
                     </div>
                   </li>
                 </ul>
-                <div  className="md:hidden flex justify-center items-center mt-[20px]">
-                <button
-                  className="cursor-pointer"
-                  onClick={() => {
-                    setVendorCard(false);
-                  }}
-                >
-                  <img
-                    src={DropUp}
-                    alt="contact"
-                   
-                  />
-                </button>
+                <div className="md:hidden flex justify-center items-center mt-[20px]">
+                  <button
+                    className="cursor-pointer"
+                    onClick={() => {
+                      setVendorCard(false);
+                    }}
+                  >
+                    <img
+                      src={DropUp}
+                      alt="contact"
+
+                    />
+                  </button>
                 </div>
-                
+
               </div>
             </div>
           </div>
