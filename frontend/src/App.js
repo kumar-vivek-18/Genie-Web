@@ -22,7 +22,7 @@ function App() {
         <Route exact path='/genie/contact' element={<Contacts />} />
         <Route exact path='/genie/contact/report' element={<Reports />} />
         <Route exact path='/genie/termsandconditions' element={<TermsAndConditons />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/*" element={<Error />} />
       </Routes>
 
       <Footer />
