@@ -24,14 +24,14 @@ const Navbar = () => {
 
 
     useEffect(() => {
-        
-         if (updatedURL.includes('earn')) {
+
+        if (updatedURL.includes('earn')) {
             setCurrPage("earn");
         }
         else if (updatedURL.includes('contact')) {
             setCurrPage("contact");
         }
-      
+
         else {
             setCurrPage("home");
 
@@ -52,12 +52,12 @@ const Navbar = () => {
     return (
         <div className='w-screen max-sm:fixed max-sm:top-0 flex justify-between md:px-[14px] max-sm:mt-0 max-lg:pb-[20px]  lg:pr-[50px] bg-white md:bg-opacity-0 z-50'>
             <div className='pt-[14px] flex flex-row gap-[20px] md:pl-[14px] max-lg:pl-[30px] relative'>
-            <a href="/">
-                <img src={logo} alt="logo" className=' w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] ' />
+                <a href="/genie">
+                    <img src={logo} alt="logo" className=' w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] ' />
                 </a>
                 {
-                     <img src={Genie} alt="logo" className=' w-[80px] h-[50px] lg:w-[120px] lg:h-[80px] ' />
-                
+                    <img src={Genie} alt="logo" className=' w-[80px] h-[50px] lg:w-[120px] lg:h-[80px] ' />
+
                 }
             </div>
             <div className=' hidden lg:flex lg:gap-10 items-center  text-[#2f2341] text-[16px]'>
@@ -65,14 +65,14 @@ const Navbar = () => {
 
 
                     <div className='w-[max-content]'>
-                        <Link to='/' className={`${currPage === "home" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] text-[#2F2E41] poppins-regular`}>About Us</Link>
+                        <Link to='/genie' className={`${currPage === "home" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] text-[#2F2E41] poppins-regular`}>About Us</Link>
                     </div>
-                   
+
                     <div className='w-[max-content]'>
-                        <Link to='/earn' className={`${currPage === "earn" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] text-[#2F2E41] poppins-regular`}>Earn with us</Link>
+                        <Link to='/genie/earn' className={`${currPage === "earn" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] text-[#2F2E41] poppins-regular`}>Earn with us</Link>
                     </div>
                     <div className='w-[max-content]'>
-                        <Link to='/contact' className={`${currPage === "contact" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] text-[#2F2E41] poppins-regular`}>Contact Us</Link>
+                        <Link to='/genie/contact' className={`${currPage === "contact" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] text-[#2F2E41] poppins-regular`}>Contact Us</Link>
                     </div>
                 </div>
                 <div className='w-full flex scale-110 pl-2 gap-[5px] items-center justify-center'>
@@ -98,14 +98,14 @@ const Navbar = () => {
                 <div className='w-full flex fixed top-[80px] overflow-y-hidden  lg:hidden  justify-center z-50 '>
                     <div className='flex flex-col gap-6 py-10 pb-10 bg-white w-full  h-screen text-[14px] text-[#2F2E41]  items-center shadow-md  rounded-md'>
                         <div >
-                            <Link to='/' className={`${currPage === "home" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}` } onClick={handleNav}>Home</Link>
+                            <Link to='/genie' className={`${currPage === "home" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>Home</Link>
                         </div>
-                        
+
                         <div >
-                            <Link to='/earn' className={`${currPage === "earn" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>Earn with us</Link>
+                            <Link to='/genie/earn' className={`${currPage === "earn" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>Earn with us</Link>
                         </div>
                         <div>
-                            <Link to='/contact' className={`${currPage === "contact" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>Contact Us</Link>
+                            <Link to='/genie/contact' className={`${currPage === "contact" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>Contact Us</Link>
                         </div>
                     </div>
                 </div>

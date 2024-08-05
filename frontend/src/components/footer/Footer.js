@@ -23,9 +23,9 @@ const Footer = () => {
           <div className="max-sm:flex flex-col hidden my-2">
             <p className="flex text-[#2e2c43]  text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Help Center</p>
             <p className="flex flex-col ">
-              <Link to="/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> Report Concern </Link>
-              <Link to="/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]">Contact Us</Link>
-              <Link to="/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Terms and Conditions*</Link>
+              <Link to="/genie/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> Report Concern </Link>
+              <Link to="/genie/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]">Contact Us</Link>
+              <Link to="/genie/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Terms and Conditions*</Link>
             </p>
             <p className="flex mt-[15px] font-bold text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Careers</p>
             <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Open Opportunities</p>
@@ -34,9 +34,9 @@ const Footer = () => {
         <div className="max-sm:hidden">
           <p className="flex text-[#2e2c43]  text-[12px]  md:text-[14px] xl:text-[16px] poppins-black ">Help Center</p>
           <p className="flex flex-col ">
-            <Link to="/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> Report Concern </Link>
-            <Link to="/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]">Contact Us</Link>
-            <Link to="/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Terms and Conditions*</Link>
+            <Link to="/genie/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> Report Concern </Link>
+            <Link to="/genie/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]">Contact Us</Link>
+            <Link to="/genie/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Terms and Conditions*</Link>
           </p>
           <p className="flex mt-[15px]  text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Careers</p>
           <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Open Opportunities</p>
