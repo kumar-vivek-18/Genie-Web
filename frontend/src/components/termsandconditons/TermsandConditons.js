@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from "react";
-import earning1 from "../../assets/earnings/earning1.svg";
-import earning2 from "../../assets/earnings/earning2.svg";
+import React, { useState } from "react";
 import "../../index.css";
-import { Link, useLocation } from "react-router-dom";
 import Customer from "../../assets/termsandconditions/Customer.svg";
 import Retailer from "../../assets/termsandconditions/Retailer.svg";
 import Star from "../../assets/termsandconditions/star.svg";
@@ -28,6 +25,7 @@ const TermsAndConditons = () => {
               <img
                 src={Customer}
                 alt="contact"
+                loading='lazy'
                 className="w-[196px] h-[152px]"
               />
               <h1 className="text-[28px] flex-1 lg:ml-[30px]  text-[#2E2C43] poppins-black  max-sm:text-[22px] max-lg:text-center">
@@ -40,7 +38,7 @@ const TermsAndConditons = () => {
                   setVendorCard(false);
                 }}
               >
-                <img src={DropDown} alt="dropdown" className="   " />
+                <img src={DropDown} alt="dropdown" loading='lazy' className="   " />
               </button>
             </div>
           </div>
@@ -53,6 +51,7 @@ const TermsAndConditons = () => {
                 <img
                   src={Customer}
                   alt="contact"
+                  loading='lazy'
                   className="w-[196px] h-[152px]   "
                 />
                 <button
@@ -65,6 +64,7 @@ const TermsAndConditons = () => {
                   <img
                     src={DropUp}
                     alt="contact"
+                    loading='lazy'
                     className=" absolute max-md:hidden top-[30px] right-[30px]  "
                   />
                 </button>
@@ -79,6 +79,7 @@ const TermsAndConditons = () => {
                       <img
                         src={Star}
                         alt="contact"
+                        loading='lazy'
                         className="w-[10px] h-[10px] mt-[5px]   mr-4"
                       />
                     </span>
@@ -91,6 +92,7 @@ const TermsAndConditons = () => {
                       <img
                         src={Star}
                         alt="contact"
+                        loading='lazy'
                         className="w-[10px] h-[10px] mt-[5px]  mr-4 "
                       />
                     </span>
@@ -102,6 +104,7 @@ const TermsAndConditons = () => {
                       <img
                         src={Star}
                         alt="contact"
+                        loading='lazy'
                         className="w-[10px] h-[10px] mt-[5px]  mr-4  "
                       />
                     </span>
@@ -113,6 +116,7 @@ const TermsAndConditons = () => {
                       <img
                         src={Star}
                         alt="contact"
+                        loading='lazy'
                         className="w-[10px] h-[10px]  mt-[5px] mr-4 "
                       />
                     </span>{" "}
@@ -130,6 +134,7 @@ const TermsAndConditons = () => {
                   >
                     <img
                       src={DropUp}
+                      loading='lazy'
                       alt="contact"
 
                     />
@@ -148,6 +153,7 @@ const TermsAndConditons = () => {
               <img
                 src={Retailer}
                 alt="contact"
+                loading='lazy'
                 className="w-[196px] h-[152px]  "
               />
               <h1 className="text-[28px] flex-1 lg:ml-[30px]  text-[#2E2C43] poppins-black  max-sm:text-[22px] max-lg:text-center">
@@ -160,7 +166,7 @@ const TermsAndConditons = () => {
                   setCustomerCard(false);
                 }}
               >
-                <img src={DropDown} alt="dropdown" className="   " />
+                <img src={DropDown} alt="dropdown" loading='lazy' className="   " />
               </button>
             </div>
           </div>
@@ -173,6 +179,7 @@ const TermsAndConditons = () => {
                 <img
                   src={Retailer}
                   alt="contact"
+                  loading='lazy'
                   className="w-[196px] h-[152px]   "
                 />
                 <button
@@ -184,6 +191,7 @@ const TermsAndConditons = () => {
                   <img
                     src={DropUp}
                     alt="contact"
+                    loading='lazy'
                     className=" absolute max-md:hidden top-[30px] right-[30px]"
                   />
                 </button>
@@ -198,6 +206,7 @@ const TermsAndConditons = () => {
                       <img
                         src={Star}
                         alt="contact"
+                        loading='lazy'
                         className="w-[10px] h-[10px] mt-[5px] mr-4"
                       />
                       <p className="text-[14px]   poppins-regular text-[#001B33]">
@@ -215,6 +224,7 @@ const TermsAndConditons = () => {
                       <img
                         src={Star}
                         alt="contact"
+                        loading='lazy'
                         className="w-[10px] h-[10px] mt-[5px] mr-4"
                       />
                       <p className="text-[14px]  poppins-regular text-[#001B33]">
@@ -228,6 +238,7 @@ const TermsAndConditons = () => {
                       <img
                         src={Star}
                         alt="contact"
+                        loading='lazy'
                         className="w-[10px] h-[10px] mt-[5px] mr-4"
                       />
                       <p className="text-[14px]   poppins-regular text-[#001B33]">
@@ -245,6 +256,7 @@ const TermsAndConditons = () => {
                       <img
                         src={Star}
                         alt="contact"
+                        loading='lazy'
                         className="w-[10px] h-[10px] mt-[5px] mr-4"
                       />
                       <p className="text-[14px]   poppins-regular text-[#001B33]">
@@ -269,6 +281,7 @@ const TermsAndConditons = () => {
                   >
                     <img
                       src={DropUp}
+                      loading='lazy'
                       alt="contact"
 
                     />

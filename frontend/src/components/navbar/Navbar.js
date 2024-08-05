@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import logo from '../../assets/navbar/culturTap logo.svg';
 import appStore from '../../assets/navbar/appStore.svg';
 import playStore from '../../assets/navbar/playStore.svg';
-import culturTapName from '../../assets/navbar/culturTapName.svg';
 import { Link, useLocation } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -53,10 +52,10 @@ const Navbar = () => {
         <div className='w-screen max-sm:fixed max-sm:top-0 flex justify-between md:px-[14px] max-sm:mt-0 max-lg:pb-[20px]  lg:pr-[50px] bg-white md:bg-opacity-0 z-50'>
             <div className='pt-[14px] flex flex-row gap-[20px] md:pl-[14px] max-lg:pl-[30px] relative'>
                 <a href="/genie">
-                    <img src={logo} alt="logo" className=' w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] ' />
+                    <img src={logo} alt="logo" loading='lazy' className=' w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] ' />
                 </a>
                 {
-                    <img src={Genie} alt="logo" className=' w-[80px] h-[50px] lg:w-[120px] lg:h-[80px] ' />
+                    <img src={Genie} alt="logo" loading='lazy' className=' w-[80px] h-[50px] lg:w-[120px] lg:h-[80px] ' />
 
                 }
             </div>
@@ -77,10 +76,10 @@ const Navbar = () => {
                 </div>
                 <div className='w-full flex scale-110 pl-2 gap-[5px] items-center justify-center'>
                     <a href="#" className='mt-[30px]'>
-                        <img src={appStore} alt="appStore" width="100px" height="44px" />
+                        <img src={appStore} alt="appStore" loading='lazy' width="100px" height="44px" />
                     </a>
                     <a href="#" className='mt-[30px]'>
-                        <img src={playStore} alt="playStore" width="100px" height="44px" />
+                        <img src={playStore} alt="playStore" loading='lazy' width="100px" height="44px" />
                     </a>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../../index.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactElement = ({ details }) => {
@@ -40,7 +40,7 @@ const ContactElement = ({ details }) => {
               mobileNo: data.mobileNo,
               email: data.email,
               concern: data.concern,
-              requestId:""
+              requestId: ""
             }
           );
           console.log("res", res);
@@ -66,7 +66,7 @@ const ContactElement = ({ details }) => {
               mobileNo: data.mobileNo,
               email: data.email,
               concern: data.concern,
-              requestId:""
+              requestId: ""
             }
           );
           if (res) {
@@ -184,6 +184,7 @@ const ContactElement = ({ details }) => {
           <img
             src={details.img}
             alt="contact"
+            loading='lazy'
             className="w-[400px] h-[300px] md:w-[754px] md:h-[540px]  max-md:px-[30px] "
           />
         </div>

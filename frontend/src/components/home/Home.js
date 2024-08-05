@@ -109,10 +109,9 @@ const Home = () => {
           {scroller.map((item, index) => (
             <div
               key={index}
-              className={`card-slider md:mt-[60px] w-[320px] h-[280px] md:w-[360px] md:h-[300px] lg:w-[400px] lg:h-[360px] xl:w-[480px] xl:h-[360px] flex-shrink-0  m-2 mb-10 sha ${
-                activeIndex === index ? "active" : ""
-              }`}
-             
+              className={`card-slider md:mt-[60px] w-[320px] h-[280px] md:w-[360px] md:h-[300px] lg:w-[400px] lg:h-[360px] xl:w-[480px] xl:h-[360px] flex-shrink-0  m-2 mb-10 sha ${activeIndex === index ? "active" : ""
+                }`}
+
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
@@ -120,6 +119,7 @@ const Home = () => {
                 <img
                   src={item.link}
                   alt="culturtap-works"
+                  loading='lazy'
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -131,11 +131,10 @@ const Home = () => {
         {scroller.map((item, index) => (
           <div
             key={item.id}
-            className={`bullet-point ${
-              index === activeIndex
+            className={`bullet-point ${index === activeIndex
                 ? "active-bullet transition-all duration-500"
                 : ""
-            }`}
+              }`}
             onClick={() => {
               const contentElement = contentRef.current;
               const containerWidth = `450px`;
@@ -155,24 +154,25 @@ const Home = () => {
           </h1>
           <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">A bargaining app! </p>
           <p className=" text-[14px]  poppins-regular text-[#001B33]">
-            CulturTap Genie is the world's first app dedicated to bargaining. Avail the best prices for all shopping items & maintenance services! 
+            CulturTap Genie is the world's first app dedicated to bargaining. Avail the best prices for all shopping items & maintenance services!
           </p>
 
           <p className="flex justify-center items-center text-[14px] poppins-regular text-[#001B33]">
-          Now bargaining is possible from your couch! There is no need to wander in markets anymore. CulturTap Genie offers everyone an easy bargaining place with nearby stores and service providers. Start bargaining by choosing the right spades category. Accept, recreate, and reject offers until you are satisfied with the offered price. Download the app now and start bargaining.
+            Now bargaining is possible from your couch! There is no need to wander in markets anymore. CulturTap Genie offers everyone an easy bargaining place with nearby stores and service providers. Start bargaining by choosing the right spades category. Accept, recreate, and reject offers until you are satisfied with the offered price. Download the app now and start bargaining.
           </p>
         </div>
         <div className="flex-1 flex justify-center mt-[30px]  ">
-                <img
-                  src={AboutImg}
-                  alt="culturtap-about"
-                  className="w-[280px] h-[320px] md:w-[400px] md:h-[500px] 2xl:w-[500px] 2xl:h-[580px] object-cover"
-                />
-              </div>
+          <img
+            src={AboutImg}
+            alt="culturtap-about"
+            loading='lazy'
+            className="w-[280px] h-[320px] md:w-[400px] md:h-[500px] 2xl:w-[500px] 2xl:h-[580px] object-cover"
+          />
+        </div>
       </div>
-      
-     
-      
+
+
+
     </div>
   );
 };
