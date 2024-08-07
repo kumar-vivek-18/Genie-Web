@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import facebook from "../../assets/footer/facebook.svg";
 import twitter from "../../assets/footer/twitter.svg";
 import linkedin from "../../assets/footer/linkedin.svg";
@@ -6,8 +6,11 @@ import instagram from "../../assets/footer/insta.svg";
 import playStore from "../../assets/footer/playStore.svg";
 import appStore from "../../assets/footer/appStore.svg";
 import { Link } from "react-router-dom";
+import AppStoreModal from "../utils/AppStoreModal";
 
 const Footer = () => {
+  const [appStoreModal, setAppStoreModal] = useState(false);
+
   return (
     <div className="w-[100%] flex max-lg:flex-col text-[14px]  max-lg:items-center lg:justify-between lg:pl-[120px] lg:pr-[120px] mt-[50px] pb-[30px] pt-[30px] bg-[#f5f5f5]  ">
       <div className="w-full lg:w-3/5  flex max-sm:flex-col max-sm:pl-[30px]  max-sm:gap-4  lg:justify-between justify-evenly">
@@ -80,7 +83,7 @@ const Footer = () => {
           Download App
         </p>
         <div className="flex scale-110 items-center">
-          <a href="#" className=" cursor-pointer">
+          <button onClick={() => { setAppStoreModal(!appStoreModal); console.log('hii') }} className=" cursor-pointer">
             <img
               src={appStore}
               alt="logo"
@@ -88,7 +91,7 @@ const Footer = () => {
               width="100px"
               height="44px"
             />
-          </a>
+          </button>
           <a href="#" className="cursor-pointer ">
             <img
               src={playStore}
@@ -100,6 +103,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      {appStoreModal && <AppStoreModal setAppStoreModal={setAppStoreModal} />}
     </div>
   );
 };

@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../../index.css";
 import { useLocation } from "react-router-dom";
 import Genie from "../../assets/navbar/Genie-Business.svg";
 import PlayStore from "../../assets/navbar/playStore.svg";
 import AppStore from "../../assets/navbar/appStore.svg";
 import earn from "../../assets/earnings/earn.svg";
+import AppStoreModal from "../utils/AppStoreModal";
 
 const Earn = () => {
   const location = useLocation();
+  const [appStoreModal, setAppStoreModal] = useState(false);
 
   useEffect(() => {
     console.log("location", location.search);
@@ -124,7 +126,7 @@ const Earn = () => {
               Download the Business App
             </p>
             <div className="flex flex-row gap-[6px]">
-              <a href="#" className=" cursor-pointer">
+              <button onClick={() => { setAppStoreModal(!appStoreModal); }} className=" cursor-pointer">
                 <img
                   src={AppStore}
                   alt="logo"
@@ -132,7 +134,7 @@ const Earn = () => {
                   width="120px"
                   height="44px"
                 />
-              </a>
+              </button>
               <a href="#" className="cursor-pointer ">
                 <img
                   src={PlayStore}
@@ -146,6 +148,7 @@ const Earn = () => {
           </div>
         </div>
       </div>
+      {appStoreModal && <AppStoreModal setAppStoreModal={setAppStoreModal} />}
     </div>
   );
 };

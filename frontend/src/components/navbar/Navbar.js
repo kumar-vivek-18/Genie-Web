@@ -6,6 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Genie from "../../assets/navbar/logo.svg"
+import AppStoreModal from '../utils/AppStoreModal';
 
 
 const Navbar = () => {
@@ -14,6 +15,7 @@ const Navbar = () => {
     const currentURLRef = useRef(window.location.href);
     const [updatedURL, setUpdatedURL] = useState(window.location.href);
     const [isOpen, setisOpen] = useState(false);
+    const [appStoreModal, setAppStoreModal] = useState(false);
 
     const location = useLocation();
     useEffect(() => {
@@ -75,9 +77,9 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className='w-full flex scale-110 pl-2 gap-[5px] items-center justify-center'>
-                    <a href="#" className='mt-[30px]'>
+                    <button onClick={() => { setAppStoreModal(!appStoreModal); }} className='mt-[30px]'>
                         <img src={appStore} alt="appStore" loading='lazy' width="100px" height="44px" />
-                    </a>
+                    </button>
                     <a href="#" className='mt-[30px]'>
                         <img src={playStore} alt="playStore" loading='lazy' width="100px" height="44px" />
                     </a>
@@ -97,7 +99,7 @@ const Navbar = () => {
                 <div className='w-full flex fixed top-[80px] overflow-y-hidden  lg:hidden  justify-center z-50 '>
                     <div className='flex flex-col gap-6 py-10 pb-10 bg-white w-full  h-screen text-[14px] text-[#2F2E41]  items-center shadow-md  rounded-md'>
                         <div >
-                            <Link to='/genie' className={`${currPage === "home" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>Home</Link>
+                            <Link to='/genie' className={`${currPage === "home" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>About Us</Link>
                         </div>
 
                         <div >
@@ -110,7 +112,7 @@ const Navbar = () => {
                 </div>
             }
 
-
+            {appStoreModal && <AppStoreModal setAppStoreModal={setAppStoreModal} />}
         </div >
 
     )

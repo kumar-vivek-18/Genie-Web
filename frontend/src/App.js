@@ -9,6 +9,7 @@ import Contacts from './components/contacts/Contacts';
 import Reports from './components/contacts/Reports';
 import Error from './components/utils/Error';
 import TermsAndConditons from './components/termsandconditons/TermsandConditons';
+import AppStoreModal from './components/utils/AppStoreModal';
 
 function App() {
   return (
