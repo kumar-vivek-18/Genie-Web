@@ -93,17 +93,17 @@ const ContactElement = ({ details }) => {
 
   return (
     <div className="max-lg:pl-[0px] lg:ml-[180px] md:mt-[66px] max-sm:pt-[100px] overflow-hidden">
-      <div className="max-lg:pl-[30px] ">
+      <div className="max-lg:pl-[30px]">
         <h1 className="text-[28px]  text-[#2E2C43] poppins-black max-sm:text-[28px]">
           {details.type}
         </h1>
         <p className="text-[14px] text-[#001b33] poppins-regular">{details.title}</p>
       </div>
 
-      <div className="md:mt-[69px] flex max-lg:flex-col-reverse max-lg:items-center md:gap-[100px] lg:gap-[150px] ">
+      <div className="md:mt-[69px]  flex max-lg:flex-col-reverse max-lg:items-center md:gap-[50px] lg:gap-[60px] lg:pr-[60px] justify-center">
         <form
           onSubmit={HandleSubmit}
-          className="flex flex-1 flex-col items-center gap-6 z-10"
+          className="flex flex-1 flex-col  gap-6 z-10"
         >
           <div>
             <p className="text-[14px] text-[#2E2C43] pl-4 pb-2 poppins-regular">Name</p>
@@ -180,12 +180,12 @@ const ContactElement = ({ details }) => {
           </button>
         </form>
 
-        <div className="flex flex-1 justify-center items-center">
+        <div className="flex  items-center">
           <img
             src={details.img}
             alt="contact"
             loading='lazy'
-            className="w-[400px] h-[300px] md:w-[754px] md:h-[540px]  max-md:px-[30px] "
+            className="w-[400px] h-[300px] lg:w-[604px] md:h-[500px]   max-md:px-[30px] "
           />
         </div>
       </div>

@@ -8,7 +8,7 @@ const Contacts = () => {
         type: "Contact us!",
         title: "Need any support for? have queries for us?",
         img: contact1,
-        submit: "SUBMIT"
+        submit: "Submit"
     }
 
     return (

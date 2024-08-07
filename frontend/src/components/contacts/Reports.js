@@ -7,7 +7,7 @@ const Reports = () => {
         type: "Report Concern!",
         title: "Have concern for us?",
         img: contact2,
-        submit: "SUBMIT CONCERN"
+        submit: "Submit Concern"
     }
 
     return (
