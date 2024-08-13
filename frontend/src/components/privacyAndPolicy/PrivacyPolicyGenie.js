@@ -36,6 +36,32 @@ const PrivacyPolicyGenie = () => {
                                             className="w-[10px] h-[10px] mt-[5px] mr-4"
                                         />
                                         <p className="text-[14px]   poppins-regular text-[#001B33]">
+                                            We collect personal information -  Name, Mobile number, Email address.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                    <div className="flex items-start">
+                                        <img
+                                            src={Star}
+                                            alt="contact"
+                                            loading='lazy'
+                                            className="w-[10px] h-[10px] mt-[5px] mr-4"
+                                        />
+                                        <p className="text-[14px]   poppins-regular text-[#001B33]">
+                                            Use of personal data- to create or manage your account, to process of order and invoice, to identify you on our platform, to contact you and respond your queries.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                    <div className="flex items-start">
+                                        <img
+                                            src={Star}
+                                            alt="contact"
+                                            loading='lazy'
+                                            className="w-[10px] h-[10px] mt-[5px] mr-4"
+                                        />
+                                        <p className="text-[14px]   poppins-regular text-[#001B33]">
                                             We don't share any data with anyone, We understand the need for customer data privacy. The vendors would not get any data directly, excluding customer names, unless the customer approves and shares it for purchase and delivery purposes.
                                         </p>
                                     </div>
@@ -120,12 +146,7 @@ const PrivacyPolicyGenie = () => {
                                 </li>
                                 <li className="text-[14px] pl-[25px]  poppins-regular text-[#001B33]">
                                     <div className="flex items-start">
-                                        {/* <img
-                                            src={Star}
-                                            alt="contact"
-                                            loading='lazy'
-                                            className="w-[10px] h-[10px] mt-[5px] mr-4"
-                                        /> */}
+
                                         <p className="text-[14px]   poppins-regular text-[#001B33]">
                                             <span className="text-[14px]  poppins-bold text-[#001B33]">
                                                 - Location:{" "}

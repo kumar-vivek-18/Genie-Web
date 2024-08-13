@@ -36,6 +36,45 @@ const PrivacyAndPolicyBusiness = () => {
                                             className="w-[10px] h-[10px] mt-[5px] mr-4"
                                         />
                                         <p className="text-[14px]   poppins-regular text-[#001B33]">
+                                            We collect personal information -  Name, Mobile number, Store Name , Store Images , Store Location, Store Description, Store Category, GST/Labor Certificate.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                    <div className="flex items-start">
+                                        <img
+                                            src={Star}
+                                            alt="contact"
+                                            loading='lazy'
+                                            className="w-[10px] h-[10px] mt-[5px] mr-4"
+                                        />
+                                        <p className="text-[14px]   poppins-regular text-[#001B33]">
+                                            Use of personal data- to create or manage your account, to process of order and Invoice, to identify you on our platform, to contact you and respond to your queries.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                    <div className="flex items-start">
+                                        <img
+                                            src={Star}
+                                            alt="contact"
+                                            loading='lazy'
+                                            className="w-[10px] h-[10px] mt-[5px] mr-4"
+                                        />
+                                        <p className="text-[14px]   poppins-regular text-[#001B33]">
+                                            Document is used for verification of authentic vendors and store location for providing the customers ease and convenience.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                    <div className="flex items-start">
+                                        <img
+                                            src={Star}
+                                            alt="contact"
+                                            loading='lazy'
+                                            className="w-[10px] h-[10px] mt-[5px] mr-4"
+                                        />
+                                        <p className="text-[14px]   poppins-regular text-[#001B33]">
                                             We don't share data with anyone outside the CulturTap community, We understand the need for vendor data privacy. The person would not get any data directly, excluding vendor name, store location, and contact number (Only when the customer accepts the vendor’s offer).
 
                                         </p>
