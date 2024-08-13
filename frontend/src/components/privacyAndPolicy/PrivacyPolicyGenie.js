@@ -56,79 +56,79 @@ const PrivacyPolicyGenie = () => {
                                         </p>
                                     </div>
                                 </li>
-                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                <li className="text-[14px] pl-[25px]  poppins-regular text-[#001B33]">
                                     <div className="flex items-start">
-                                        <img
+                                        {/* <img
                                             src={Star}
                                             alt="contact"
                                             loading='lazy'
                                             className="w-[10px] h-[10px] mt-[5px] mr-4"
-                                        />
-                                        <p className="text-[14px]   poppins-regular text-[#001B33]">
+                                        /> */}
+                                        <p className="text-[14px] poppins-regular text-[#001B33]">
                                             <span className="text-[14px]  poppins-bold text-[#001B33]">
-                                                Notifications:{" "}
+                                                - Notifications:{" "}
                                             </span>
                                             Notifications permission is needed to handle the app notifications.
                                         </p>
                                     </div>
                                 </li>
-                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                <li className="text-[14px] pl-[25px]  poppins-regular text-[#001B33]">
                                     <div className="flex items-start">
-                                        <img
+                                        {/* <img
                                             src={Star}
                                             alt="contact"
                                             loading='lazy'
                                             className="w-[10px] h-[10px] mt-[5px] mr-4"
-                                        />
+                                        /> */}
                                         <p className="text-[14px]   poppins-regular text-[#001B33]">
                                             <span className="text-[14px]  poppins-bold text-[#001B33]">
-                                                Camera:{" "}
+                                                - Camera:{" "}
                                             </span>
                                             Camera permission is needed to capture product, and profile images, update a profile and send product attachments and offers while bargaining.                                            </p>
                                     </div>
                                 </li>
-                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                <li className="text-[14px] pl-[25px]  poppins-regular text-[#001B33]">
                                     <div className="flex items-start">
-                                        <img
+                                        {/* <img
                                             src={Star}
                                             alt="contact"
                                             loading='lazy'
                                             className="w-[10px] h-[10px] mt-[5px] mr-4"
-                                        />
+                                        /> */}
                                         <p className="text-[14px]   poppins-regular text-[#001B33]">
                                             <span className="text-[14px]  poppins-bold text-[#001B33]">
-                                                Gallery:{" "}
+                                                - Gallery:{" "}
                                             </span>
                                             Gallery permission is needed to upload and save the product and profile images in the gallery.
                                         </p>
                                     </div>
                                 </li>
-                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                <li className="text-[14px] pl-[25px]  poppins-regular text-[#001B33]">
                                     <div className="flex items-start">
-                                        <img
+                                        {/* <img
                                             src={Star}
                                             alt="contact"
                                             loading='lazy'
                                             className="w-[10px] h-[10px] mt-[5px] mr-4"
-                                        />
+                                        /> */}
                                         <p className="text-[14px]   poppins-regular text-[#001B33]">
                                             <span className="text-[14px]  poppins-bold text-[#001B33]">
-                                                Storage:{" "}
+                                                - Storage:{" "}
                                             </span>
                                             Storage permission is needed to save the images and documents.                                           </p>
                                     </div>
                                 </li>
-                                <li className="text-[14px]   poppins-regular text-[#001B33]">
+                                <li className="text-[14px] pl-[25px]  poppins-regular text-[#001B33]">
                                     <div className="flex items-start">
-                                        <img
+                                        {/* <img
                                             src={Star}
                                             alt="contact"
                                             loading='lazy'
                                             className="w-[10px] h-[10px] mt-[5px] mr-4"
-                                        />
+                                        /> */}
                                         <p className="text-[14px]   poppins-regular text-[#001B33]">
                                             <span className="text-[14px]  poppins-bold text-[#001B33]">
-                                                Location:{" "}
+                                                - Location:{" "}
                                             </span>
                                             Location permission is required to collect the customer’s current location to send customer requests to the valid vendors in their range of shopping.                                   </p>
                                     </div>
