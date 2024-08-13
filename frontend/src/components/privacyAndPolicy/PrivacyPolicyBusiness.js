@@ -20,7 +20,7 @@ const PrivacyAndPolicyBusiness = () => {
             <div className="w-full flex flex-col gap-[40px] mt-[30px] mb-[30px] md:mt-[30px]  ">
 
                 <div className="mb-[30px] flex ">
-                    <div className="w-[100%] terms-card p-[20px] flex flex-col gap-4 mx-auto">
+                    <div className="w-[100%] sm:p-[20px] flex flex-col gap-4 mx-auto">
 
                         <div className="relative pb-[40px]">
                             <p className="text-[20px] poppins-extrabold text-[#2E2C43]">
@@ -160,21 +160,7 @@ const PrivacyAndPolicyBusiness = () => {
                                     </div>
                                 </li>
                             </ul>
-                            <div className="md:hidden flex justify-center items-center mt-[20px]">
-                                <button
-                                    className="cursor-pointer"
-                                    onClick={() => {
-                                        setVendorCard(false);
-                                    }}
-                                >
-                                    <img
-                                        src={DropUp}
-                                        loading='lazy'
-                                        alt="contact"
 
-                                    />
-                                </button>
-                            </div>
 
                         </div>
                     </div>
