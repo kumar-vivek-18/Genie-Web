@@ -29,6 +29,9 @@ const Footer = () => {
               <Link to="/genie/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> Report Concern </Link>
               <Link to="/genie/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]">Contact Us</Link>
               <Link to="/genie/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Terms and Conditions*</Link>
+              <Link to="/genie/genie-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Genie Privacy Policy*</Link>
+              <Link to="/genie/business-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Genie Business Privacy Policy*</Link>
+
             </p>
             <p className="flex mt-[15px] font-bold text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Careers</p>
             <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Open Opportunities</p>
@@ -40,6 +43,9 @@ const Footer = () => {
             <Link to="/genie/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> Report Concern </Link>
             <Link to="/genie/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]">Contact Us</Link>
             <Link to="/genie/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Terms and Conditions*</Link>
+            <Link to="/genie/genie-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Genie Privacy Policy*</Link>
+            <Link to="/genie/business-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Genie Business Privacy Policy*</Link>
+
           </p>
           <p className="flex mt-[15px]  text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Careers</p>
           <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Open Opportunities</p>
