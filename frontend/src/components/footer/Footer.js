@@ -17,12 +17,13 @@ const Footer = () => {
         <div className="">
           <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">@2024 All rights reserved to </p>
           <p className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> CulturTap Tourism India Pvt. Ltd.</p>
-          <div className="flex mt-[26px] poppins-black text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px]">
-            Registered Office
+          <div className="flex mt-[40px] poppins-black text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px]">
+            Office Address
           </div>
-          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">189/2, Out side datia gate,</p>
+          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Bundelkhand Innovation & Incubation </p>
+          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Center Foundation, BIET Jhansi,</p>
           <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Jhansi, Uttar Pradesh, India.</p>
-          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">284002</p>
+          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">284128</p>
           <div className="max-sm:flex flex-col hidden my-2">
             <p className="flex text-[#2e2c43]  text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Help Center</p>
             <p className="flex flex-col ">
