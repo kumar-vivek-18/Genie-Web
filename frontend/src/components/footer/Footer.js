@@ -99,7 +99,7 @@ const Footer = () => {
               height="44px"
             />
           </button>
-          <a href="#" className="cursor-pointer ">
+          <a href="https://play.google.com/store/apps/details?id=com.culturtapgenie.Genie" className="cursor-pointer ">
             <img
               src={playStore}
               alt="logo"

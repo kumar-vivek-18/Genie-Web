@@ -80,7 +80,7 @@ const Navbar = () => {
                     <button onClick={() => { setAppStoreModal(!appStoreModal); }} className='mt-[30px]'>
                         <img src={appStore} alt="appStore" loading='lazy' width="100px" height="44px" />
                     </button>
-                    <a href="#" className='mt-[30px]'>
+                    <a href="https://play.google.com/store/apps/details?id=com.culturtapgenie.Genie" className='mt-[30px]'>
                         <img src={playStore} alt="playStore" loading='lazy' width="100px" height="44px" />
                     </a>
                 </div>
