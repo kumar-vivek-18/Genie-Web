@@ -60,6 +60,7 @@ const Footer = () => {
             href="https://www.facebook.com/share/4JS6Rn4yNNWu8hJA/?mibextid=qi2Omg"
             className="w-[32px] h-[32px]"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={facebook} alt="logo" loading="lazy" />
           </a>
@@ -67,6 +68,7 @@ const Footer = () => {
             href="https://x.com/Culturtap_Genie?t=iIE9XUCGQggt_Nr2OAn9RA&s=09"
             className="w-[32px] h-[32px] pt-[2px] cursor-pointer"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={twitter} alt="logo" loading="lazy" />
           </a>
@@ -74,6 +76,7 @@ const Footer = () => {
             href="https://www.linkedin.com/company/culturtap/"
             className="w-[32px] h-[32px] cursor-pointer"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={linkedin} alt="logo" loading="lazy" />
           </a>
@@ -81,6 +84,7 @@ const Footer = () => {
             href="https://www.instagram.com/culturtap_genie?igsh=MXNrbTQ5aHdkdzNsbA=="
             className="w-[32px] h-[32px] cursor-pointer"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={instagram} alt="logo" loading="lazy" />
           </a>

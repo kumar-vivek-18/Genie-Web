@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../../assets/navbar/culturTap logo.svg';
 import appStore from '../../assets/navbar/appStore.svg';
 import playStore from '../../assets/navbar/playStore.svg';
@@ -12,7 +12,6 @@ import AppStoreModal from '../utils/AppStoreModal';
 const Navbar = () => {
     // const currentURL = window.location.href;
     const [currPage, setCurrPage] = useState("home");
-    const currentURLRef = useRef(window.location.href);
     const [updatedURL, setUpdatedURL] = useState(window.location.href);
     const [isOpen, setisOpen] = useState(false);
     const [appStoreModal, setAppStoreModal] = useState(false);
@@ -45,7 +44,7 @@ const Navbar = () => {
         if (!updatedURL.includes('services') && !location.search.includes("termandcondition")) {
             window.scrollTo(0, 0);
         }
-    }, [updatedURL]);
+    }, [updatedURL, location.search]);
     const handleNav = () => {
         setisOpen(!isOpen);
     }
