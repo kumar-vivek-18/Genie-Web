@@ -107,6 +107,12 @@ const Navbar = () => {
                         <div>
                             <Link to='/genie/contact' className={`${currPage === "contact" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>Contact Us</Link>
                         </div>
+                        <button onClick={() => { setAppStoreModal(!appStoreModal); }} className=''>
+                            <img src={appStore} alt="appStore" loading='lazy' width="100px" height="44px" />
+                        </button>
+                        <a href="https://play.google.com/store/apps/details?id=com.culturtapgenie.Genie" className=''>
+                            <img src={playStore} alt="playStore" loading='lazy' width="100px" height="44px" />
+                        </a>
                     </div>
                 </div>
             }
