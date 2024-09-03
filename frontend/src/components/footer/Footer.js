@@ -5,6 +5,7 @@ import linkedin from "../../assets/footer/linkedin.svg";
 import instagram from "../../assets/footer/insta.svg";
 import playStore from "../../assets/footer/playStore.svg";
 import appStore from "../../assets/footer/appStore.svg";
+import Youtube from "../../assets/footer/youtube.svg";
 import { Link } from "react-router-dom";
 import AppStoreModal from "../utils/AppStoreModal";
 
@@ -45,7 +46,7 @@ const Footer = () => {
             <Link to="/genie/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#FB8C00]">Contact Us</Link>
             <Link to="/genie/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">Terms and Conditions*</Link>
             <Link to="/genie/genie-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Privacy Policy*</Link>
-            <Link to="/genie/business-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Business Privacy Policy*</Link>
+            <Link to="/genie/business-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Business <br />Privacy Policy*</Link>
 
           </p>
           <p className="flex mt-[15px]  text-[#FB8C00] text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Careers</p>
@@ -87,6 +88,14 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img src={instagram} alt="logo" loading="lazy" />
+          </a>
+          <a
+            href="https://youtube.com/@culturtapgenie?si=tyPUWkptagSfh56m"
+            className="w-[32px] h-[32px] cursor-pointer"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Youtube} alt="logo" loading="lazy" />
           </a>
         </div>
 
