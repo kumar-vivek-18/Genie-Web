@@ -83,9 +83,7 @@ const TermsAndConditons = () => {
                         className="w-[10px] h-[10px] mt-[5px]   mr-4"
                       />
                     </span>
-                    5 spades are free for first-time users! After that, each
-                    spades will cost you 5 Rs. These are temporary charges,
-                    CulturTap will increase the charges shortly.
+                    50 spades are free for first-time users! After that, each spade will cost you 5 Rs. These are temporary charges, CulturTap will increase the charges shortly. 
                   </li>
                   <li className="flex text-[14px]  poppins-regular text-[#001B33]">
                     <span>
@@ -96,8 +94,8 @@ const TermsAndConditons = () => {
                         className="w-[10px] h-[10px] mt-[5px]  mr-4 "
                       />
                     </span>
-                    If the vendors don't accept your request, there won't be any
-                    charge.
+                    Vendors don't accept your request?, or if fewer than 2 vendors are connected on chat, there won't be any charge.
+
                   </li>
                   <li className="flex text-[14px] poppins-regular text-[#001B33]">
                     <span>
@@ -108,8 +106,7 @@ const TermsAndConditons = () => {
                         className="w-[10px] h-[10px] mt-[5px]  mr-4  "
                       />
                     </span>
-                    If you encounter any issues, please report your concerns to
-                    us.
+                    Encountered any issues? Please report your concerns to us.
                   </li>
                   <li className="flex text-[14px]   poppins-regular text-[#001B33]">
                     <span>
@@ -120,8 +117,7 @@ const TermsAndConditons = () => {
                         className="w-[10px] h-[10px]  mt-[5px] mr-4 "
                       />
                     </span>{" "}
-                    Vendors will list their stores for home delivery, You can
-                    choose specific vendors based on your delivery requirements.
+                    Vendors will list their stores for home delivery, You can choose specific vendors based on your delivery requirements.
                   </li>
                 </ul>
 
