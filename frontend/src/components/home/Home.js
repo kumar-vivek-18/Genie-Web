@@ -4,16 +4,19 @@ import scroller2 from "../../assets/Home/scrollers/scroller2.svg";
 import scroller3 from "../../assets/Home/scrollers/scroller3.svg";
 import scroller4 from "../../assets/Home/scrollers/scroller4.svg";
 import scroller5 from "../../assets/Home/scrollers/scroller5.svg";
-import scroller6 from "../../assets/Home/scrollers/scroller6.svg";
-import scroller7 from "../../assets/Home/scrollers/scroller7.svg";
+import playStore from "../../assets/footer/playStore.svg";
+import appStore from "../../assets/footer/appStore.svg";
 import AboutImg from "../../assets/Home/AboutImg.svg";
 
 import "../../index.css";
+import AppStoreModal from "../utils/AppStoreModal";
 
 const Home = () => {
   const contentRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [appStoreModal, setAppStoreModal] = useState(false);
+
 
   const scroller = [
     {
@@ -36,14 +39,7 @@ const Home = () => {
       id: 5,
       link: scroller5,
     },
-    {
-      id: 6,
-      link: scroller6,
-    },
-    {
-      id: 7,
-      link: scroller7,
-    },
+  
   ];
 
   const calculateActiveIndex = () => {
@@ -89,7 +85,7 @@ const Home = () => {
           behavior: "auto",
         });
       }
-    }, 10); // Adjust the interval as needed for desired scrolling speed
+    }, 20); // Adjust the interval as needed for desired scrolling speed
 
     contentRef.current.addEventListener("scroll", handleScroll);
 
@@ -109,13 +105,13 @@ const Home = () => {
           {scroller.map((item, index) => (
             <div
               key={index}
-              className={`card-slider md:mt-[60px] w-[320px] h-[280px] md:w-[360px] md:h-[300px] lg:w-[400px] lg:h-[360px] xl:w-[480px] xl:h-[360px] flex-shrink-0  m-2 mb-10 sha ${activeIndex === index ? "active" : ""
+              className={`card-slider md:mt-[60px] w-[320px] h-[400px] md:w-[360px] md:h-[450px] lg:w-[400px] lg:h-[500px] xl:w-[480px] xl:h-[500px] flex-shrink-0  m-2 mb-10 sha ${activeIndex === index ? "active" : ""
                 }`}
 
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              <div className="w-full h-full flex justify-center pt-[18px] ">
+              <div className="w-full h-full flex justify-center  ">
                 <img
                   src={item.link}
                   alt="culturtap-works"
@@ -146,19 +142,45 @@ const Home = () => {
           ></div>
         ))}
       </div>
+      <div className="pl-[20px] pr-[20px] sm:pl-[50px] gap-[30px] mt-10 md:hidden">
+      <div className="flex items-center">
+          <button onClick={() => { setAppStoreModal(!appStoreModal); console.log('hii') }} className=" cursor-pointer">
+            <img
+              src={appStore}
+              alt="logo"
+              loading="lazy"
+              width="100px"
+              height="44px"
+            />
+          </button>
+          <a href="https://play.google.com/store/apps/details?id=com.culturtapgenie.Genie" className="cursor-pointer ">
+            <img
+              src={playStore}
+              alt="logo"
+              loading="lazy"
+              width="115px"
+              height="55px"
+            />
+          </a>
+        </div>
+      </div>
 
-      <div className="w-full flex flex-col md:flex-row mt-10 ">
+      
+
+      <div className="w-full flex flex-col md:flex-row md:mt-10 ">
         <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[120px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
-          <h1 className="text-[28px] md:text-[28px] poppins-black text-[#2E2C43] max-sm:text-[28px]">
+          <h1 className="text-[28px] md:text-[56px]  poppins-black text-[#2E2C43] max-sm:text-[28px]">
             About Us !
           </h1>
-          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">A bargaining app! </p>
+          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">Bargaining & Shopping App- Shop Fashion, Jewel, Home, Maintenance Services etc. Lowest Price Bargaining App. 
+
+</p>
           <p className=" text-[14px]  poppins-regular text-[#001B33]">
-            CulturTap Genie is the world's first app dedicated to bargaining. Avail the best prices for all shopping items & maintenance services!
+          CulturTap Genie is the world's first dedicated e-commerce bargaining app.Now bargaining is possible from your couch! No need to wander in the market anymore. Get better prices than the online-listed product pricing at your nearby stores. Plan your shopping before leaving home. Save your time & money together.
           </p>
 
-          <p className="flex justify-center items-center text-[14px] poppins-regular text-[#001B33]">
-            Now bargaining is possible from your couch! There is no need to wander in markets anymore. CulturTap Genie offers everyone an easy bargaining place with nearby stores and service providers. Start bargaining by choosing the right spades category. Accept, recreate, and reject offers until you are satisfied with the offered price. Download the app now and start bargaining.
+          <p className="text-[14px]  poppins-regular text-[#001B33]">
+          Download the App Now. Save More Shop Smart ! 
           </p>
         </div>
         <div className="flex-1 flex justify-center mt-[30px]  ">
@@ -171,6 +193,7 @@ const Home = () => {
         </div>
       </div>
 
+      {appStoreModal && <AppStoreModal setAppStoreModal={setAppStoreModal} />}
 
 
     </div>
