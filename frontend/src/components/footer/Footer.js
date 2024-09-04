@@ -102,7 +102,7 @@ const Footer = () => {
         <p className="text-[#FB8C00] font-bold mt-[25px] mb-[10px] text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">
           Download App
         </p>
-        <div className="flex scale-110 items-center">
+        <div className="flex lg:scale-110 items-center">
           <button onClick={() => { setAppStoreModal(!appStoreModal); console.log('hii') }} className=" cursor-pointer">
             <img
               src={appStore}

@@ -13,7 +13,7 @@ const TermsAndConditons = () => {
   return (
     <div className="max-sm:px-[30px] max-lg:px-[50px] lg:mx-[120px] md:mt-[60px] max-sm:pt-[100px] overflow-x-hidden">
       <div>
-        <h1 className="text-[28px]  text-[#2E2C43] poppins-black  max-sm:text-[26px]">
+        <h1 className="text-[28px] text-[#2E2C43] poppins-black  max-sm:text-[26px]">
           Terms & Conditions*
         </h1>
       </div>
