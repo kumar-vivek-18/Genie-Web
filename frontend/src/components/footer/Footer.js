@@ -67,7 +67,7 @@ const Footer = () => {
           </a>
           <a
             href="https://x.com/Culturtap_Genie?t=iIE9XUCGQggt_Nr2OAn9RA&s=09"
-            className="w-[32px] h-[32px] pt-[2px] cursor-pointer"
+            className="w-[32px] h-[32px] scale-110 mt-[2px] cursor-pointer"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -75,7 +75,7 @@ const Footer = () => {
           </a>
           <a
             href="https://www.linkedin.com/company/culturtap/"
-            className="w-[32px] h-[32px] cursor-pointer"
+            className="w-[32px] h-[32px] scale-105 mt-[.5px] cursor-pointer"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -83,7 +83,7 @@ const Footer = () => {
           </a>
           <a
             href="https://www.instagram.com/culturtap_genie?igsh=MXNrbTQ5aHdkdzNsbA=="
-            className="w-[32px] h-[32px] cursor-pointer"
+            className="w-[32px] h-[32px]  scale-110 mt-[.5px]  cursor-pointer"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -91,7 +91,7 @@ const Footer = () => {
           </a>
           <a
             href="https://youtube.com/@culturtapgenie?si=tyPUWkptagSfh56m"
-            className="w-[32px] h-[32px] cursor-pointer"
+            className="w-[32px] h-[32px] scale-[115%] mt-[1px] cursor-pointer"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -105,7 +105,7 @@ const Home = () => {
           {scroller.map((item, index) => (
             <div
               key={index}
-              className={`card-slider md:mt-[60px] w-[320px] h-[300px] md:w-[320px] md:h-[360px] lg:w-[360px] lg:h-[360px]  flex-shrink-0  m-2 mb-10 sha ${activeIndex === index ? "active" : ""
+              className={`card-slider md:mt-[60px] w-[320px] h-[300px] md:w-[360px] md:h-[360px] lg:w-[360px] lg:h-[360px]  flex-shrink-0  m-2 mb-10 sha ${activeIndex === index ? "active" : ""
                 }`}
 
               onMouseEnter={() => setIsPaused(true)}
@@ -142,7 +142,26 @@ const Home = () => {
           ></div>
         ))}
       </div>
-      <div className="pl-[20px] pr-[20px] sm:pl-[50px] gap-[30px] mt-10 md:hidden">
+      
+
+
+
+      <div className="w-full flex flex-col md:flex-row md:mt-10 ">
+        <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[120px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
+          <h1 className="text-[28px] lg:text-[56px]  poppins-black text-[#2E2C43] max-sm:text-[28px]">
+            About Us !
+          </h1>
+          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">Bargaining & Shopping App- Shop Fashion, Jewel, Home, Maintenance Services etc. Lowest Price Bargaining App.
+
+          </p>
+          <p className=" text-[14px]  poppins-regular text-[#001B33]">
+            CulturTap Genie is the world's first dedicated e-commerce bargaining app.Now bargaining is possible from your couch! No need to wander in the market anymore. Get better prices than the online-listed product pricing from your nearby stores. Plan your shopping before leaving home. Save your time & money together.
+          </p>
+
+          <p className="text-[14px]  poppins-regular text-[#001B33]">
+            Download the App Now. Save More Shop Smart !
+          </p>
+          <div className=" gap-[30px] md:hidden">
         <div className="flex items-center">
           <button onClick={() => { setAppStoreModal(!appStoreModal); console.log('hii') }} className=" cursor-pointer">
             <img
@@ -164,31 +183,13 @@ const Home = () => {
           </a>
         </div>
       </div>
-
-
-
-      <div className="w-full flex flex-col md:flex-row md:mt-10 ">
-        <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[120px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
-          <h1 className="text-[28px] md:text-[56px]  poppins-black text-[#2E2C43] max-sm:text-[28px]">
-            About Us !
-          </h1>
-          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">Bargaining & Shopping App- Shop Fashion, Jewel, Home, Maintenance Services etc. Lowest Price Bargaining App.
-
-          </p>
-          <p className=" text-[14px]  poppins-regular text-[#001B33]">
-            CulturTap Genie is the world's first dedicated e-commerce bargaining app.Now bargaining is possible from your couch! No need to wander in the market anymore. Get better prices than the online-listed product pricing at your nearby stores. Plan your shopping before leaving home. Save your time & money together.
-          </p>
-
-          <p className="text-[14px]  poppins-regular text-[#001B33]">
-            Download the App Now. Save More Shop Smart !
-          </p>
         </div>
         <div className="flex-1 flex justify-center mt-[30px]  ">
           <img
             src={AboutImg}
             alt="culturtap-about"
             loading='lazy'
-            className="w-[280px] h-[320px] md:w-[400px] md:h-[500px] 2xl:w-[500px] 2xl:h-[580px] object-cover"
+            className="w-[280px] h-[320px] md:w-[500px] md:h-[500px] object-cover"
           />
         </div>
       </div>
