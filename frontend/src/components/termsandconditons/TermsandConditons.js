@@ -83,7 +83,7 @@ const TermsAndConditons = () => {
                         className="w-[10px] h-[10px] mt-[5px]   mr-4"
                       />
                     </span>
-                    50 spades are free for first-time users! After that, each spade will cost you 5 Rs. These are temporary charges, CulturTap will increase the charges shortly. 
+                    25 spades are free for first-time users! After that, each spade will cost you 5 Rs. These are temporary charges, CulturTap will increase the charges shortly. 
                   </li>
                   <li className="flex text-[14px]  poppins-regular text-[#001B33]">
                     <span>
