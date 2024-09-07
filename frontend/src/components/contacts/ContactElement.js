@@ -119,7 +119,7 @@ const ContactElement = ({ details }) => {
           </div>
           <div className="flex gap-[16px]">
             <div>
-              <p className="text-[14px] w-[max-content] text-[#2e2c43] pl-4 pb-2 poppins-regular">
+              <p className="text-[14px]  w-[max-content] text-[#2e2c43] pl-4 pb-2 poppins-regular">
                 Country Code
               </p>
               <input
