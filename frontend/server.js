@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 // Serve the static files from the React app's build directory
-app.use('/genie', express.static(path.join(__dirname, 'build')));
+app.use('/', express.static(path.join(__dirname, 'build')));
 
 // Send index.html for any request that doesn't match static files
 app.get('/*', (req, res) => {
