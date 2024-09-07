@@ -28,11 +28,11 @@ const Footer = () => {
           <div className="max-sm:flex flex-col hidden my-2">
             <p className="flex text-[#FB8C00]  text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Help Center</p>
             <p className="flex flex-col ">
-              <Link to="/genie/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#FB8C00]"> Report Concern </Link>
-              <Link to="/genie/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#FB8C00]">Contact Us</Link>
-              <Link to="/genie/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">Terms and Conditions*</Link>
-              <Link to="/genie/genie-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Privacy Policy*</Link>
-              <Link to="/genie/business-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Business Privacy Policy*</Link>
+              <Link to="/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#FB8C00]"> Report Concern </Link>
+              <Link to="/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#FB8C00]">Contact Us</Link>
+              <Link to="/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">Terms and Conditions*</Link>
+              <Link to="/genie-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Privacy Policy*</Link>
+              <Link to="/business-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Business Privacy Policy*</Link>
 
             </p>
             <p className="flex mt-[15px] font-bold text-[#FB8C00] text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Careers</p>
@@ -42,11 +42,11 @@ const Footer = () => {
         <div className="max-sm:hidden">
           <p className="flex text-[#FB8C00]  text-[12px]  md:text-[14px] xl:text-[16px] poppins-black ">Help Center</p>
           <p className="flex flex-col ">
-            <Link to="/genie/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#FB8C00]"> Report Concern </Link>
-            <Link to="/genie/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#FB8C00]">Contact Us</Link>
-            <Link to="/genie/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">Terms and Conditions*</Link>
-            <Link to="/genie/genie-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Privacy Policy*</Link>
-            <Link to="/genie/business-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Business <br />Privacy Policy*</Link>
+            <Link to="/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#FB8C00]"> Report Concern </Link>
+            <Link to="/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#FB8C00]">Contact Us</Link>
+            <Link to="/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">Terms and Conditions*</Link>
+            <Link to="/genie-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Privacy Policy*</Link>
+            <Link to="/business-privacy-policy" className="text-[12px]  md:text-[14px]  poppins-regular text-[#FB8C00]">CulturTap Genie Business <br />Privacy Policy*</Link>
 
           </p>
           <p className="flex mt-[15px]  text-[#FB8C00] text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Careers</p>

@@ -6,7 +6,7 @@ const app = express();
 app.use('/genie', express.static(path.join(__dirname, 'build')));
 
 // Send index.html for any request that doesn't match static files
-app.get('/genie/*', (req, res) => {
+app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
