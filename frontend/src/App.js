@@ -19,6 +19,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        {/* Redirect from '/' to '/genie' */}
         <Route path="/" element={<Navigate to="/genie" replace />} />
         <Route exact path='/genie' element={<Home />} />
         <Route exact path='/genie/earn' element={<Earn />} />
@@ -27,7 +28,7 @@ function App() {
         <Route exact path='/genie/termsandconditions' element={<TermsAndConditons />} />
         <Route exact path='/genie/genie-privacy-policy' element={<PrivacyPolicyGenie />} />
         <Route exact path='/genie/business-privacy-policy' element={<PrivacyAndPolicyBusiness />} />
-        <Route path="/*" element={<Error />} />
+        <Route path="/genie/*" element={<Error />} />
       </Routes>
 
       <Footer />
