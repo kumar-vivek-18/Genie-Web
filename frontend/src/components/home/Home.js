@@ -74,7 +74,7 @@ const Home = () => {
       id: 4,
       link: Category4,
     },
-   
+
     {
       id: 5,
       link: Category5,
@@ -206,7 +206,7 @@ const Home = () => {
           ></div>
         ))}
       </div>
-      
+
 
 
 
@@ -215,38 +215,38 @@ const Home = () => {
           <h1 className="text-[28px] lg:text-[56px]  poppins-black text-[#2E2C43] max-sm:text-[28px]">
             About Us !
           </h1>
-          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">Lowest Price Shopping & Bargaining App - Shop Fashion, Jewel, Home, Maintenance Services etc. 
+          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">Lowest Price Shopping & Bargaining App - Shop Fashion, Jewel, Home, Maintenance Services etc.
 
           </p>
           <p className=" text-[14px]  poppins-regular text-[#001B33]">
-            CulturTap Genie is dedicated e-commerce bargaining app. Now bargaining is possible from your couch! No need to wander in the market anymore. Get better prices than the online-listed product pricing from your nearby stores. Plan your shopping before leaving home. Save your time & money together.
+            CulturTap Genie is a dedicated e-commerce bargaining app. Now bargaining is possible from your couch! No need to wander in the market anymore. Get better prices than the online-listed product pricing from your nearby stores. Plan your shopping before leaving home. Save your time & money together.
           </p>
 
           <p className="text-[14px]  poppins-regular text-[#001B33]">
             Download the App Now. Save More Shop Smart !
           </p>
           <div className=" gap-[30px] md:hidden">
-        <div className="flex items-center">
-          <button onClick={() => { setAppStoreModal(!appStoreModal); console.log('hii') }} className=" cursor-pointer">
-            <img
-              src={appStore}
-              alt="logo"
-              loading="lazy"
-              width="100px"
-              height="44px"
-            />
-          </button>
-          <a href="https://play.google.com/store/apps/details?id=com.culturtapgenie.Genie" className="cursor-pointer ">
-            <img
-              src={playStore}
-              alt="logo"
-              loading="lazy"
-              width="115px"
-              height="55px"
-            />
-          </a>
-        </div>
-      </div>
+            <div className="flex items-center">
+              <button onClick={() => { setAppStoreModal(!appStoreModal); console.log('hii') }} className=" cursor-pointer">
+                <img
+                  src={appStore}
+                  alt="logo"
+                  loading="lazy"
+                  width="100px"
+                  height="44px"
+                />
+              </button>
+              <a href="https://play.google.com/store/apps/details?id=com.culturtapgenie.Genie" className="cursor-pointer ">
+                <img
+                  src={playStore}
+                  alt="logo"
+                  loading="lazy"
+                  width="115px"
+                  height="55px"
+                />
+              </a>
+            </div>
+          </div>
         </div>
         <div className="flex-1 flex justify-center mt-[30px]  ">
           <img
@@ -260,29 +260,29 @@ const Home = () => {
 
 
       <div className="w-full flex flex-col md:flex-row ">
-      <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[120px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
+        <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[120px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
 
-      <h1 className="text-[28px] lg:text-[56px]  poppins-black text-[#2E2C43] max-sm:text-[28px]">
+          <h1 className="text-[28px] lg:text-[56px]  poppins-black text-[#2E2C43] max-sm:text-[28px]">
             Categories
           </h1>
-      <div className="flex flex-row max-sm:justify-center flex-wrap gap-10">
-          {categories.map((item, index) => (
-          <div
-            key={item.id}
-            >
-              <div className="max-md:w-[120px] w-full h-full flex justify-center ">
-                <img
-                  src={item.link}
-                  alt="culturtap-categories"
-                  loading='lazy'
-                  className="w-full h-full"
-                />
+          <div className="flex flex-row max-sm:justify-center flex-wrap gap-10">
+            {categories.map((item, index) => (
+              <div
+                key={item.id}
+              >
+                <div className="max-md:w-[120px] w-full h-full flex justify-center ">
+                  <img
+                    src={item.link}
+                    alt="culturtap-categories"
+                    loading='lazy'
+                    className="w-full h-full"
+                  />
+                </div>
               </div>
-              </div>
-          ))}
+            ))}
           </div>
         </div>
-         
+
       </div>
 
       {appStoreModal && <AppStoreModal setAppStoreModal={setAppStoreModal} />}
