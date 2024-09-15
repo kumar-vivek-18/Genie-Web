@@ -75,49 +75,75 @@ const TermsAndConditons = () => {
                 </p>
                 <ul className="flex flex-col mt-[20px]">
                   <li className="flex text-[14px]   poppins-regular text-[#001B33]">
-                    <span>
+                  <div className="flex items-start">
                       <img
                         src={Star}
                         alt="contact"
                         loading='lazy'
-                        className="w-[10px] h-[10px] mt-[5px]   mr-4"
+                        className="w-[10px] h-[10px] mt-[5px] mr-4"
                       />
-                    </span>
-                    25 spades are free for first-time users! After that, each spade will cost you 5 Rs. These are temporary charges, CulturTap will increase the charges shortly. 
+                      <p className="text-[14px]   poppins-regular text-[#001B33]">
+                        No service charge for the first 25 Orders. After that, each order will cost you an additional 5 Rs service charge. These are temporary charges, CulturTap will increase the charges shortly. (T&C Applied*)
+                      </p>
+                    </div>
+                    
                   </li>
                   <li className="flex text-[14px]  poppins-regular text-[#001B33]">
-                    <span>
+                  <div className="flex items-start">
                       <img
                         src={Star}
                         alt="contact"
                         loading='lazy'
-                        className="w-[10px] h-[10px] mt-[5px]  mr-4 "
+                        className="w-[10px] h-[10px] mt-[5px] mr-4"
                       />
-                    </span>
-                    Vendors don't accept your request?, or if fewer than 2 vendors are connected on chat, there won't be any charge.
+                      <p className="text-[14px]   poppins-regular text-[#001B33]">
+                      We are considering a raised request as an placed order for us, 25 free orders = 25 request with out any service charge.
+                      </p>
+                    </div>
+                   
+
+                  </li>
+                  <li className="flex text-[14px]  poppins-regular text-[#001B33]">
+                  <div className="flex items-start">
+                      <img
+                        src={Star}
+                        alt="contact"
+                        loading='lazy'
+                        className="w-[10px] h-[10px] mt-[5px] mr-4"
+                      />
+                      <p className="text-[14px]   poppins-regular text-[#001B33]">
+                      Vendors don't accept your request?, or if fewer than 2 vendors are connected on chat, there won't be any charge.
+                      </p>
+                    </div>
+                    
 
                   </li>
                   <li className="flex text-[14px] poppins-regular text-[#001B33]">
-                    <span>
+                  <div className="flex items-start">
                       <img
                         src={Star}
                         alt="contact"
                         loading='lazy'
-                        className="w-[10px] h-[10px] mt-[5px]  mr-4  "
+                        className="w-[10px] h-[10px] mt-[5px] mr-4"
                       />
-                    </span>
-                    Encountered any issues? Please report your concerns to us.
+                      <p className="text-[14px]   poppins-regular text-[#001B33]">
+                      Encountered any issues? Please report your concerns to us.
+                      </p>
+                    </div>
+                    
                   </li>
                   <li className="flex text-[14px]   poppins-regular text-[#001B33]">
-                    <span>
+                  <div className="flex items-start">
                       <img
                         src={Star}
                         alt="contact"
                         loading='lazy'
-                        className="w-[10px] h-[10px]  mt-[5px] mr-4 "
+                        className="w-[10px] h-[10px] mt-[5px] mr-4"
                       />
-                    </span>{" "}
-                    Vendors will list their stores for home delivery, You can choose specific vendors based on your delivery requirements.
+                      <p className="text-[14px]   poppins-regular text-[#001B33]">
+                      Vendors will list their stores for home delivery, You can choose specific vendors based on your delivery requirements.
+                      </p>
+                    </div>
                   </li>
                 </ul>
 

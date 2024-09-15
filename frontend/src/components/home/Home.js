@@ -151,7 +151,7 @@ const Home = () => {
           <h1 className="text-[28px] lg:text-[56px]  poppins-black text-[#2E2C43] max-sm:text-[28px]">
             About Us !
           </h1>
-          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">Bargaining & Lowest Price Shopping App - Shop Fashion, Jewel, Home, Maintenance Services etc. 
+          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">Lowest Price Shopping & Bargaining App - Shop Fashion, Jewel, Home, Maintenance Services etc. 
 
           </p>
           <p className=" text-[14px]  poppins-regular text-[#001B33]">
