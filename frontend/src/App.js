@@ -30,7 +30,6 @@ function App() {
         <Route exact path='/genie/business-privacy-policy' element={<PrivacyAndPolicyBusiness />} />
         <Route path="/genie/*" element={<Error />} />
       </Routes>
-
       <Footer />
     </>
   );

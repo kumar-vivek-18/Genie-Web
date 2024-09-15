@@ -7,6 +7,21 @@ import scroller5 from "../../assets/Home/scrollers/scroller5.svg";
 import playStore from "../../assets/footer/playStore.svg";
 import appStore from "../../assets/footer/appStore.svg";
 import AboutImg from "../../assets/Home/AboutImg.svg";
+import Category1 from "../../assets/Home/categories/category1.svg";
+import Category2 from "../../assets/Home/categories/category2.svg";
+import Category3 from "../../assets/Home/categories/category3.svg";
+import Category4 from "../../assets/Home/categories/category4.svg";
+import Category5 from "../../assets/Home/categories/category5.svg";
+import Category6 from "../../assets/Home/categories/category6.svg";
+import Category7 from "../../assets/Home/categories/category7.svg";
+import Category8 from "../../assets/Home/categories/category8.svg";
+import Category9 from "../../assets/Home/categories/category9.svg";
+import Category10 from "../../assets/Home/categories/category10.svg";
+import Category11 from "../../assets/Home/categories/category11.svg";
+
+
+
+
 
 import "../../index.css";
 import AppStoreModal from "../utils/AppStoreModal";
@@ -41,6 +56,55 @@ const Home = () => {
     },
 
   ];
+
+  const categories = [
+    {
+      id: 1,
+      link: Category1,
+    },
+    {
+      id: 2,
+      link: Category2,
+    },
+    {
+      id: 3,
+      link: Category3,
+    },
+    {
+      id: 4,
+      link: Category4,
+    },
+   
+    {
+      id: 5,
+      link: Category5,
+    },
+    {
+      id: 6,
+      link: Category6,
+    },
+    {
+      id: 7,
+      link: Category7,
+    },
+    {
+      id: 8,
+      link: Category8,
+    },
+    {
+      id: 9,
+      link: Category9,
+    },
+    {
+      id: 10,
+      link: Category10,
+    },
+    {
+      id: 11,
+      link: Category11,
+    },
+
+  ]
 
   const calculateActiveIndex = () => {
     const contentElement = contentRef.current ?? 0;
@@ -96,7 +160,7 @@ const Home = () => {
   }, [isPaused]);
 
   return (
-    <div className="w-screen  max-sm:pt-[100px] -z-50">
+    <div className="w-screen  max-sm:pt-[100px] h-max">
       <div className="pl-[10px] mr-[10px] mx-auto sm:pl-[20px] sm:pr-[20px] lg:pl-[40px] ">
         <div
           className="flex  gap-[15px] pl-[30px]  overflow-x-scroll scrollbar-hidden bg-white"
@@ -155,7 +219,7 @@ const Home = () => {
 
           </p>
           <p className=" text-[14px]  poppins-regular text-[#001B33]">
-            CulturTap Genie is the world's first dedicated e-commerce bargaining app.Now bargaining is possible from your couch! No need to wander in the market anymore. Get better prices than the online-listed product pricing from your nearby stores. Plan your shopping before leaving home. Save your time & money together.
+            CulturTap Genie is dedicated e-commerce bargaining app. Now bargaining is possible from your couch! No need to wander in the market anymore. Get better prices than the online-listed product pricing from your nearby stores. Plan your shopping before leaving home. Save your time & money together.
           </p>
 
           <p className="text-[14px]  poppins-regular text-[#001B33]">
@@ -192,6 +256,33 @@ const Home = () => {
             className="w-[280px] h-[320px] md:w-[500px] md:h-[500px] object-cover"
           />
         </div>
+      </div>
+
+
+      <div className="w-full flex flex-col md:flex-row ">
+      <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[120px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
+
+      <h1 className="text-[28px] lg:text-[56px]  poppins-black text-[#2E2C43] max-sm:text-[28px]">
+            Categories
+          </h1>
+      <div className="flex flex-row max-sm:justify-center flex-wrap gap-10">
+          {categories.map((item, index) => (
+          <div
+            key={item.id}
+            >
+              <div className="max-md:w-[120px] w-full h-full flex justify-center ">
+                <img
+                  src={item.link}
+                  alt="culturtap-categories"
+                  loading='lazy'
+                  className="w-full h-full"
+                />
+              </div>
+              </div>
+          ))}
+          </div>
+        </div>
+         
       </div>
 
       {appStoreModal && <AppStoreModal setAppStoreModal={setAppStoreModal} />}
