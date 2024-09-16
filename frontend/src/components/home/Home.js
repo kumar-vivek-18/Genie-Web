@@ -260,17 +260,17 @@ const Home = () => {
 
 
       <div className="w-full flex flex-col md:flex-row ">
-        <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[120px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
+        <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px]  lg:pl-[120px]  gap-[30px] lg:gap-[40px] my-10 max-lg:justify-center">
 
           <h1 className="text-[28px] lg:text-[56px]  poppins-black text-[#2E2C43] max-sm:text-[28px]">
             Categories
           </h1>
-          <div className="flex flex-row max-sm:justify-center flex-wrap gap-10">
+          <div className="flex flex-row  flex-wrap  gap-[15px]">
             {categories.map((item, index) => (
               <div
                 key={item.id}
               >
-                <div className="max-md:w-[120px] w-full h-full flex justify-center ">
+                <div className="max-sm:w-[90px] max-md:w-[120px] w-full h-full flex justify-center ">
                   <img
                     src={item.link}
                     alt="culturtap-categories"
