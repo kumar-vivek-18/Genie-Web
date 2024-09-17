@@ -270,7 +270,7 @@ const Home = () => {
               <div
                 key={item.id}
               >
-                <div className="max-sm:w-[160px] max-md:w-[160px] w-full h-full flex justify-center ">
+                <div className="max-sm:w-[155px] max-md:w-[160px] w-full h-full flex justify-center ">
                   <img
                     src={item.link}
                     alt="culturtap-categories"
