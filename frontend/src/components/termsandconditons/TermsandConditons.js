@@ -97,7 +97,7 @@ const TermsAndConditons = () => {
                         className="w-[10px] h-[10px] mt-[5px] mr-4"
                       />
                       <p className="text-[14px]   poppins-regular text-[#001B33]">
-                      We are considering a raised request as an placed order for us, 25 free orders = 25 request with out any service charge.
+                      We are considering a raised request as an placed order for us, 25 free orders = 25 request without any service charge.
                       </p>
                     </div>
                    

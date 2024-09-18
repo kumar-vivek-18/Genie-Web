@@ -272,7 +272,7 @@ const Home = () => {
               >
                 <div className="max-sm:w-[155px] max-md:w-[160px] w-full h-full flex justify-center ">
                   <img
-                    src={item.link}
+                    src={item.link} 
                     alt="culturtap-categories"
                     loading='lazy'
                     className="w-full h-full"

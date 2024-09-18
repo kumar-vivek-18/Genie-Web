@@ -34,7 +34,7 @@ const Earn = () => {
         <div className="lg:w-[50%] flex flex-col  ">
           <div className="">
             <p className=" text-[14px] poppins-bold text-[#2F2E41] my-4">
-              Culturtap Genie Business app
+              CulturTap Genie Business app
             </p>
             <p className=" text-[14px] poppins-regular text-[#001B33]">
               CulturTap Genie is the world's first app dedicated to bargaining.
@@ -60,7 +60,7 @@ const Earn = () => {
               </p>
               <p className="text-[14px] poppins-regular text-[#001B33]">
                 <span className=" text-[14px] poppins-semibold text-[#001B33]">
-                  1. Recieve Notifications:{" "}
+                  1. Receive Notifications:{" "}
                 </span>
                 You will receive notifications with a message and product images
                 with the customer’s expected price.
