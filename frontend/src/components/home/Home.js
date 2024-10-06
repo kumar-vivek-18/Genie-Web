@@ -4,6 +4,8 @@ import scroller2 from "../../assets/Home/scrollers/scroller2.svg";
 import scroller3 from "../../assets/Home/scrollers/scroller3.svg";
 import scroller4 from "../../assets/Home/scrollers/scroller4.svg";
 import scroller5 from "../../assets/Home/scrollers/scroller5.svg";
+import scroller8 from "../../assets/Home/scrollers/scroller8.svg";
+
 import playStore from "../../assets/footer/playStore.svg";
 import appStore from "../../assets/footer/appStore.svg";
 import AboutImg from "../../assets/Home/AboutImg.svg";
@@ -53,6 +55,10 @@ const Home = () => {
     {
       id: 5,
       link: scroller5,
+    },
+    {
+      id: 6,
+      link: scroller8,
     },
 
   ];
@@ -110,7 +116,7 @@ const Home = () => {
     const contentElement = contentRef.current ?? 0;
     if (!contentElement) return;
     const scrollLeft = contentElement.scrollLeft ?? 0;
-    const containerWidth = 240;
+    const containerWidth = 260;
     // const containerWidth = contentElement.offsetWidth;
     const totalWidth = contentElement.scrollWidth ?? 0;
     let newIndex;
