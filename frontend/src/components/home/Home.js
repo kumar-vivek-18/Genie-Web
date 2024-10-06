@@ -233,7 +233,7 @@ const Home = () => {
           </p>
           <div className=" gap-[30px] md:hidden">
             <div className="flex items-center">
-              <button onClick={() => { setAppStoreModal(!appStoreModal); console.log('hii') }} className=" cursor-pointer">
+              <button onClick={() => { setAppStoreModal(!appStoreModal); }} className=" cursor-pointer">
                 <img
                   src={appStore}
                   alt="logo"

@@ -103,7 +103,7 @@ const Footer = () => {
           Download App
         </p>
         <div className="flex lg:scale-110 items-center">
-          <button onClick={() => { setAppStoreModal(!appStoreModal); console.log('hii') }} className=" cursor-pointer">
+          <button onClick={() => { setAppStoreModal(!appStoreModal);}} className=" cursor-pointer">
             <img
               src={appStore}
               alt="logo"

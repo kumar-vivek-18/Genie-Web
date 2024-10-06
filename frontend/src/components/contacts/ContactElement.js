@@ -27,8 +27,8 @@ const ContactElement = ({ details }) => {
       data.concern.length > 0
     ) {
       const apiuri = process.env.REACT_APP_API_URL;
-      console.log("apiUri", apiuri);
-      console.log("data", data);
+      // console.log("apiUri", apiuri);
+      // console.log("data", data);
       setLoading(true);
       try {
         if (details.type === "Contact us!") {
@@ -43,12 +43,12 @@ const ContactElement = ({ details }) => {
               requestId: ""
             }
           );
-          console.log("res", res);
+          // console.log("res", res);
           if (res) {
             setLoading(false);
             toast.success("Send Successfully");
           }
-          console.log("res", res);
+          // console.log("res", res);
 
           setData({
             name: "",
@@ -70,7 +70,7 @@ const ContactElement = ({ details }) => {
             }
           );
           if (res) {
-            console.log("resquery", res);
+            // console.log("resquery", res);
             setLoading(false);
             toast.success("Send Successfully");
           }
@@ -84,7 +84,7 @@ const ContactElement = ({ details }) => {
           });
         }
       } catch (error) {
-        console.log("error", error);
+        // console.log("error", error);
         toast.error("Error Occured");
         return;
       }

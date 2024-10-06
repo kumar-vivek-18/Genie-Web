@@ -13,9 +13,9 @@ const Earn = () => {
   const [appStoreModal, setAppStoreModal] = useState(false);
 
   useEffect(() => {
-    console.log("location", location.search);
+    // console.log("location", location.search);
     if (location.search.includes("termandcondition")) {
-      console.log("location");
+      // console.log("location");
       window.scrollTo({
         top: 1300,
         behavior: "smooth",
