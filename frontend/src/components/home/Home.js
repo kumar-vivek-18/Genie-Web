@@ -19,7 +19,13 @@ import Category7 from "../../assets/Home/categories/category7.svg";
 import Category8 from "../../assets/Home/categories/category8.svg";
 import Category9 from "../../assets/Home/categories/category9.svg";
 import Category10 from "../../assets/Home/categories/category10.svg";
-import Category11 from "../../assets/Home/categories/category11.svg";
+import MoreCategory from "../../assets/Home/categories/category11.svg";
+import Category12 from "../../assets/Home/categories/category12.svg";
+import Category13 from "../../assets/Home/categories/category13.svg";
+import Category14 from "../../assets/Home/categories/category14.svg";
+import Category15 from "../../assets/Home/categories/category15.svg";
+import Category16 from "../../assets/Home/categories/category16.svg";
+
 
 
 
@@ -105,10 +111,32 @@ const Home = () => {
       id: 10,
       link: Category10,
     },
+    
     {
-      id: 11,
-      link: Category11,
+      id: 12,
+      link: Category12,
     },
+    {
+      id: 13,
+      link: Category13,
+    },
+    {
+      id: 14,
+      link: Category14,
+    },
+    {
+      id: 15,
+      link: Category15,
+    },
+    {
+      id: 16,
+      link: Category16,
+    },
+    {
+      id:0,
+      link:MoreCategory,
+    },
+    
 
   ]
 
